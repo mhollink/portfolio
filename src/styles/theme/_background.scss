@@ -1,0 +1,19 @@
+body {
+  background:
+          radial-gradient(circle at 20% 10%, rgba(59, 130, 246, 0.08), transparent 40%),
+          radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.06), transparent 40%),
+          #0b0d12;
+}
+
+main {
+  margin-top: 65px;
+}
+
+section {
+  padding: 80px 24px;
+  scroll-margin-top: 65px;
+}
+
+section:nth-child(even) {
+  background: rgba(255, 255, 255, 0.01);
+}

@@ -1,0 +1,48 @@
+
+.featured-projects {
+
+  padding: 64px;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.project-card {
+  &__content {
+    padding: 24px 0;
+    text-wrap: pretty;
+  }
+}
+
+/* 2-column layout with featured card */
+@media (max-width: 1200px) {
+  .featured-projects__card-container {
+    grid-template-columns: 1fr 1fr;
+
+    :first-child {
+      grid-column: span 2;
+    }
+  }
+}
+
+/* single column layout */
+@media (max-width: 900px) {
+  .featured-projects__card-container {
+    grid-template-columns: 1fr;
+
+    :first-child {
+      grid-column: auto;
+    }
+  }
+}

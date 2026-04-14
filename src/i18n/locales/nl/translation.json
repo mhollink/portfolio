@@ -1,0 +1,42 @@
+{
+	"hero": {
+		"headline": "Bouwt schaalbare producten met Java & React",
+		"subtext": "Tech Lead met focus op clean architecture, developer experience en moderne frontendontwikkeling",
+		"buttons": {
+			"projects": "Bekijk Projecten",
+			"resume": "Download CV"
+		},
+		"snippet": {
+			"engineer": "ontwikkelaar",
+			"understandable": "Begrijpbaar",
+			"maintainability": "Onderhoudbaar",
+			"pragmatic": "Pragmatisch",
+			"architecture": "Architectuur"
+		}
+	},
+	"motd": {
+		"quote-1": "Als het verwarrend is, klopt het niet.",
+		"quote-2": "Als je het niet kunt uitleggen, moet je het niet releasen.",
+		"quote-3": "De beste oplossing is degene die je niet hoeft uit te leggen.",
+		"quote-4": "Het leven is als een Git repository: er verandert niets als je niet commit en vooruit pusht.",
+		"quote-5": "Beheers de concepten. De syntax volgt vanzelf.",
+		"quote-6": "Als je het waarom kent, is de syntax triviaal.",
+		"quote-7": "Iteratie verslaat aarzeling.",
+		"quote-8": "Wat je heb gebouwd bepaalt wat hierna komt."
+	},
+  "featured-projects": {
+    "heading": "Projecten",
+    "mlb": {
+      "title": "MESBG List Builder",
+      "description": "De List Builder is een progressive web application voor de Middle-earth Strategy Battle Game waarmee gebruikers legerlijsten kunnen maken, valideren en beheren, live games kunnen volgen en hun miniaturenverzameling kunnen bijhouden."
+    },
+    "inventory": {
+      "title": "Mini Inventory",
+      "description": "De inventory is een PWA die hobbyisten helpt hun miniaturenverzameling en ‘pile of shame’ te beheren door op een gestructureerde manier bij te houden welke modellen ze bezitten, nog in elkaar moeten zetten of nog moeten schilderden. Het biedt gebruikers een duidelijk overzicht van hun vaak overweldigende verf-achterstand."
+    },
+    "plugins": {
+      "title": "RuneLite Plugins",
+      "description": "Ik heb twee RuneLite-plugins ontwikkeld die zowel solo- als coöperatieve gameplay binnen Old School RuneScape uitbreiden. Ze maken gebruik van de RuneLite plugin API om lichte, event-driven overlays te bouwen die de game uitbreiden met extra functionaliteit."
+    }
+  }
+}
