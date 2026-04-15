@@ -1,9 +1,9 @@
-import type { CSSProperties, ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import type { Appearance, Variant } from './styles.ts';
 import { buttonBase, variantMap } from './styles.ts';
 
-type ButtonProps = {
-	children: ReactNode;
+export type ButtonProps = {
+	children?: ReactNode;
 	variant?: Variant;
 	appearance?: Appearance;
 	onClick?: () => void;
@@ -22,7 +22,7 @@ export const Button = ({
 	ariaLabel,
 }: ButtonProps) => {
 	const variantStyles = variantMap[variant];
-	const styles: CSSProperties = {
+	const styles = {
 		borderRadius: iconOnly ? '50%' : buttonBase.borderRadius,
 		padding: iconOnly
 			? '0'

@@ -1,31 +1,34 @@
 {
-	"hero": {
-		"headline": "Bouwt schaalbare producten met Java & React",
-		"subtext": "Tech Lead met focus op clean architecture, developer experience en moderne frontendontwikkeling",
-		"buttons": {
-			"projects": "Bekijk Projecten",
-			"resume": "Download CV"
-		},
-		"snippet": {
-			"engineer": "ontwikkelaar",
-			"understandable": "Begrijpbaar",
-			"maintainability": "Onderhoudbaar",
-			"pragmatic": "Pragmatisch",
-			"architecture": "Architectuur"
-		}
-	},
-	"motd": {
-		"quote-1": "Als het verwarrend is, klopt het niet.",
-		"quote-2": "Als je het niet kunt uitleggen, moet je het niet releasen.",
-		"quote-3": "De beste oplossing is degene die je niet hoeft uit te leggen.",
-		"quote-4": "Het leven is als een Git repository: er verandert niets als je niet commit en vooruit pusht.",
-		"quote-5": "Beheers de concepten. De syntax volgt vanzelf.",
-		"quote-6": "Als je het waarom kent, is de syntax triviaal.",
-		"quote-7": "Iteratie verslaat aarzeling.",
-		"quote-8": "Wat je heb gebouwd bepaalt wat hierna komt."
-	},
+  "hero": {
+    "headline": "Bouwt schaalbare producten met Java & React",
+    "subtext": "Tech Lead met focus op clean architecture, developer experience en moderne frontendontwikkeling",
+    "buttons": {
+      "projects": "Bekijk Projecten",
+      "resume": "Download CV"
+    },
+    "snippet": {
+      "engineer": "ontwikkelaar",
+      "understandable": "Begrijpbaar",
+      "maintainability": "Onderhoudbaar",
+      "pragmatic": "Pragmatisch",
+      "architecture": "Architectuur"
+    }
+  },
+  "motd": {
+    "quote-1": "Als het verwarrend is, klopt het niet.",
+    "quote-2": "Als je het niet kunt uitleggen, moet je het niet releasen.",
+    "quote-3": "De beste oplossing is degene die je niet hoeft uit te leggen.",
+    "quote-4": "Het leven is als een Git repository: er verandert niets als je niet commit en vooruit pusht.",
+    "quote-5": "Beheers de concepten. De syntax volgt vanzelf.",
+    "quote-6": "Als je het waarom kent, is de syntax triviaal.",
+    "quote-7": "Iteratie verslaat aarzeling.",
+    "quote-8": "Wat je heb gebouwd bepaalt wat hierna komt."
+  },
   "featured-projects": {
     "heading": "Projecten",
+    "project-card": {
+      "visit-site": "Bezoek website"
+    },
     "mlb": {
       "title": "MESBG List Builder",
       "description": "De List Builder is een progressive web application voor de Middle-earth Strategy Battle Game waarmee gebruikers legerlijsten kunnen maken, valideren en beheren, live games kunnen volgen en hun miniaturenverzameling kunnen bijhouden."
@@ -37,6 +40,10 @@
     "plugins": {
       "title": "RuneLite Plugins",
       "description": "Ik heb twee RuneLite-plugins ontwikkeld die zowel solo- als coöperatieve gameplay binnen Old School RuneScape uitbreiden. Ze maken gebruik van de RuneLite plugin API om lichte, event-driven overlays te bouwen die de game uitbreiden met extra functionaliteit."
+    },
+    "poolparty": {
+      "title": "Pool Party Panic",
+      "description": "Aan het einde van mijn HBO opleiding heb ik de minor Game Design en Development gevolgd. Hierbij heb ik een spel gebouwd met behulp van Unity3D en C#. In dit spel is het de bedoeling dat je hoofd koel houdt terwijl je er voor zorgt dat je gast niet verbranden."
     }
   }
 }

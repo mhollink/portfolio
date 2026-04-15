@@ -1,5 +1,10 @@
-import type { CSSProperties, ElementType, ReactNode } from 'react';
-import { theme } from '~/design-system/theme.ts';
+import type {
+	CSSProperties,
+	ElementType,
+	FunctionComponent,
+	PropsWithChildren,
+} from 'react';
+import { theme } from '../../theme.ts';
 
 export type Variant = 'body' | 'caption' | 'h1' | 'h2' | 'h3';
 
@@ -11,37 +16,35 @@ const variantMap: Record<Variant, ElementType> = {
 	h3: 'h3',
 };
 
-export const Typography = ({
-	variant = 'body',
+type TypographyProps = PropsWithChildren<{
+	variant?: Variant;
+	style?: CSSProperties;
+	className?: string;
+}>;
+
+export const Typography: FunctionComponent<TypographyProps> = ({
+	variant = 'body' as Variant,
 	children,
 	style,
 	className,
-}: {
-	variant?: Variant;
-	children: ReactNode;
-	style?: CSSProperties;
-	className?: string;
 }) => {
 	const Component = variantMap[variant];
-
+	const styles: CSSProperties = {
+		...getVariantStyle(variant),
+		...style,
+	};
 	return (
-		<Component
-			style={{
-				...getVariantStyle(variant),
-				...style,
-			}}
-			className={className}
-		>
+		<Component style={styles} className={className}>
 			{children}
 		</Component>
 	);
 };
 
 function getVariantStyle(variant: Variant): CSSProperties {
-	const heading = {
+	const heading: CSSProperties = {
 		background: `linear-gradient(90deg, ${theme.colors.primary}, ${theme.colors.secondary})`,
-		'-webkit-background-clip': 'text',
-		'-webkit-text-fill-color': 'transparent',
+		WebkitBackgroundClip: 'text',
+		WebkitTextFillColor: 'transparent',
 		backgroundClip: 'text',
 		color: 'transparent',
 	};

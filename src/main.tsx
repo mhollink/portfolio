@@ -6,6 +6,10 @@ import './styles/index.scss';
 
 const root = document.getElementById('root');
 
+if (!root) throw new Error('Root element not found');
+
+console.log('Hello world!');
+
 createRoot(root).render(
 	<StrictMode>
 		<App />

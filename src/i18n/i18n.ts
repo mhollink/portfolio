@@ -19,6 +19,7 @@ export type LanguageTag = keyof typeof resources;
 export type Language = 'English' | 'Nederlands';
 
 i18n
+	.createInstance()
 	.use(LanguageDetector)
 	.use(initReactI18next)
 	.init({

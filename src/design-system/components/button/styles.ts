@@ -1,10 +1,10 @@
 import type { CSSProperties } from 'react';
-import { theme } from '~/design-system/theme.ts';
+import { theme } from '~design-system/theme.ts';
 
 export type Variant = 'primary' | 'secondary' | 'default';
 export type Appearance = 'contained' | 'outlined';
 
-export const buttonBase: CSSProperties = {
+export const buttonBase = {
 	borderRadius: theme.radius.md,
 	paddingY: theme.spacing.sm,
 	paddingX: theme.spacing.md,

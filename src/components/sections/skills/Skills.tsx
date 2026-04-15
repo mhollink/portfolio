@@ -1,12 +1,11 @@
-import { Typography } from '~/design-system';
+import type { FunctionComponent } from 'react';
+import { Typography } from '~design-system/components/typography/Typography.tsx';
 
-export function Skills() {
-	return (
-		<section id="skills" className="skills">
-			<div className="skills__body">
-				<Typography variant="h2">Skills</Typography>
-                <div style={{height: "1640px"}}></div>
-			</div>
-		</section>
-	);
-}
+export const Skills: FunctionComponent = () => (
+	<section id="skills" className="skills">
+		<div className="skills__body">
+			<Typography variant="h2">Skills</Typography>
+			<div style={{ height: '1640px' }}></div>
+		</div>
+	</section>
+);

@@ -1,41 +1,13 @@
-import classNames from 'classnames';
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Typography } from '~/design-system';
+import { type FunctionComponent, useState } from 'react';
+import { MenuButton } from '~components/navbar/MenuButton.tsx';
+import { Typography } from '~design-system/components/typography/Typography.tsx';
+import { sections } from '../../sections.ts';
+import { LanguageButton } from './LanguageButton.tsx';
+import { useHighlightActiveSection } from './useHighlightActiveSection.ts';
 
-const sections = [
-	{ label: 'Projects', id: 'projects' },
-	{ label: 'Skills', id: 'skills' },
-	{ label: 'Experience', id: 'experience' },
-	{ label: 'About', id: 'about' },
-	{ label: 'Contact', id: 'contact' },
-];
-
-export function Navbar() {
-	const [active, setActive] = useState('projects');
+export const Navbar: FunctionComponent = () => {
+	const active = useHighlightActiveSection();
 	const [open, setOpen] = useState(false);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			const scrollPosition = window.scrollY + 120;
-
-			for (const section of sections) {
-				const el = document.getElementById(section.id);
-				if (!el) continue;
-
-				if (
-					scrollPosition >= el.offsetTop &&
-					scrollPosition < el.offsetTop + el.offsetHeight
-				) {
-					setActive(section.id);
-					break;
-				}
-			}
-		};
-
-		window.addEventListener('scroll', handleScroll);
-		return () => window.removeEventListener('scroll', handleScroll);
-	}, []);
 
 	const scrollTo = (id: string) => {
 		const el = document.getElementById(id);
@@ -60,9 +32,7 @@ export function Navbar() {
 					{sections.map((section) => (
 						<button
 							key={section.id}
-							className={classNames(`navbar__link`, {
-								'navbar__link--active': active === section.id,
-							})}
+							className={`navbar__link ${active === section.id ? 'navbar__link--active' : ''}`}
 							onClick={() => scrollTo(section.id)}
 							type="button"
 						>
@@ -80,42 +50,4 @@ export function Navbar() {
 			</div>
 		</header>
 	);
-}
-
-type MenuButtonProps = {
-	setOpen: (prevState: boolean) => void;
 };
-
-function MenuButton({ setOpen }: MenuButtonProps) {
-	return (
-		<button
-			className="navbar__menu-button"
-			onClick={() => setOpen((prev) => !prev)}
-			type="button"
-		>
-			<span />
-			<span />
-			<span />
-		</button>
-	);
-}
-
-function LanguageButton() {
-	const { i18n } = useTranslation();
-	return (
-		<button
-			className="navbar__language"
-			onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'nl' : 'en')}
-			type="button"
-		>
-			<img
-				src={
-					i18n.language === 'en'
-						? '/images/flags/en.svg'
-						: '/images/flags/nl.svg'
-				}
-				alt="Switch language"
-			/>
-		</button>
-	);
-}

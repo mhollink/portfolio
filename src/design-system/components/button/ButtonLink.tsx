@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import type { Appearance, Variant } from './styles.ts';
 import { buttonBase, variantMap } from './styles.ts';
 
@@ -16,7 +16,7 @@ export const ButtonLink = ({
 	href,
 }: ButtonLinkProps) => {
 	const variantStyles = variantMap[variant];
-	const styles: CSSProperties = {
+	const styles = {
 		textDecoration: 'none',
 		borderRadius: buttonBase.borderRadius,
 		padding: `${buttonBase.paddingY}px ${buttonBase.paddingX}px`,

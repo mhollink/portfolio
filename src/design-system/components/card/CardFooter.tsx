@@ -1,7 +1,9 @@
-import type { ReactNode } from 'react';
-import { theme } from '~/design-system/theme.ts';
+import type { FunctionComponent, PropsWithChildren } from 'react';
+import { theme } from '~design-system/theme.ts';
 
-export const CardFooter = ({ children }: { children: ReactNode }) => (
+export const CardFooter: FunctionComponent<PropsWithChildren> = ({
+	children,
+}) => (
 	<div
 		style={{
 			padding: theme.spacing.md,

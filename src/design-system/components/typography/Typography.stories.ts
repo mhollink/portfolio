@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import { Typography } from './Typography.tsx';
 
@@ -9,7 +9,7 @@ const meta = {
 		layout: 'centered',
 	},
 	tags: ['autodocs'],
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Typography>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

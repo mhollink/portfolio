@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import { Grid } from './Grid.tsx';
 import { GridItem } from './GridItem.tsx';
 
@@ -15,7 +14,7 @@ const meta = {
 		</div>
 	),
 	tags: ['autodocs'],
-} satisfies Meta<typeof Flex>;
+} satisfies Meta<typeof Grid>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

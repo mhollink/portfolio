@@ -1,6 +1,6 @@
 export const theme = {
 	spacing: {
-        none: 0,
+		none: 0,
 		xs: 4,
 		sm: 8,
 		md: 16,
@@ -19,9 +19,9 @@ export const theme = {
 		background: '#073A4BFF',
 	},
 	radius: {
-		sm: 4,
-		md: 8,
-		lg: 12,
+		sm: '4px',
+		md: '8px',
+		lg: '12px',
 	},
 	typography: {
 		fontFamily: 'Inter, sans-serif',

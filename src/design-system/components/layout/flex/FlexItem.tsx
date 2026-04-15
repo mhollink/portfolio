@@ -1,9 +1,8 @@
-import type { ReactNode } from 'react';
+import type { FunctionComponent, PropsWithChildren } from 'react';
 
-export const FlexItem = ({
+type FlexItemProps = PropsWithChildren<{ grow?: number }>;
+
+export const FlexItem: FunctionComponent<FlexItemProps> = ({
 	children,
 	grow,
-}: {
-	children: ReactNode;
-	grow?: number;
 }) => <div style={{ flexGrow: grow }}>{children}</div>;

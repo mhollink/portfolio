@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { ButtonLink, Typography } from '~/design-system';
+import { ButtonLink } from '~design-system/components/button/ButtonLink.tsx';
+import { Typography } from '~design-system/components/typography/Typography.tsx';
 import { MessageOfTheDay } from '../../motd/MessageOfTheDay.tsx';
 import { useSnippet } from './useSnippet.ts';
 
