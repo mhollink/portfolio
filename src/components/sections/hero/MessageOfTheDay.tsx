@@ -6,7 +6,7 @@ import { useQuoteOfTheDay } from './useQuoteOfTheDay.ts';
 const quotes = Array.from({ length: 8 }).map((_, i) => `quote-${i + 1}`);
 
 export const MessageOfTheDay: FunctionComponent = () => {
-	const { t } = useTranslation('motd');
+	const { t } = useTranslation('hero', { keyPrefix: 'motd' });
 	const quoteKey = useQuoteOfTheDay(quotes);
 
 	if (!quoteKey) return null;

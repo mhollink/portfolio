@@ -50,8 +50,9 @@ export const Chip = ({
 				backgroundColor: appearance === 'filled' ? color : 'transparent',
 				borderColor: color,
 				border: '1px solid',
-                minWidth: '5ch',
-                textAlign: 'center',
+				minWidth: '5ch',
+				textAlign: 'center',
+                textWrap: 'nowrap',
 				...sizeStyles,
 			}}
 		>

@@ -1,5 +1,6 @@
 import { type FunctionComponent, useState } from 'react';
 import { MenuButton } from '~components/navbar/MenuButton.tsx';
+import { Button } from '~design-system/components/button/Button.tsx';
 import { Typography } from '~design-system/components/typography/Typography.tsx';
 import { sections } from '../../sections.ts';
 import { LanguageButton } from './LanguageButton.tsx';
@@ -20,13 +21,15 @@ export const Navbar: FunctionComponent = () => {
 	return (
 		<header className="navbar">
 			<div className="navbar__container">
-				<Typography
-					variant="h1"
-					className="navbar__title"
-					style={{ fontSize: '2rem' }}
-				>
-					Marcel Hollink
-				</Typography>
+				<Button onClick={() => scrollTo('hero')} appearance="text">
+					<Typography
+						variant="h1"
+						className="navbar__title"
+						style={{ fontSize: '2rem' }}
+					>
+						Marcel Hollink
+					</Typography>
+				</Button>
 
 				<nav className={`nav ${open ? 'open' : ''}`}>
 					{sections.map((section) => (

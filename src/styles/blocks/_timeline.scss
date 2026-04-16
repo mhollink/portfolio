@@ -1,0 +1,73 @@
+@use "../theme/colors";
+
+.timeline {
+  position: relative;
+  margin: 32px auto;
+  padding-left: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 48px;
+
+    &:hover &__dot {
+      transform: scale(1.1);
+      box-shadow: 0 0 8px 6px rgba(34, 211, 238, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    &__dot {
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      background: #05D69E;
+      border-radius: 50%;
+      border: 1px solid #05D69E;
+      box-shadow: 0 0 8px 2px #05D69E55;
+    }
+
+    &__content {
+      padding-left: 32px;
+    }
+
+    &__projects {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+
+      .client-project {
+        padding: 8px 16px 8px;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 8px;
+        cursor: pointer;
+
+        &:hover {
+          border-left: 1px solid rgba(255, 255, 255, 0.5);
+          background: rgba(255, 255, 255, 0.05);
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    padding-left: 16px;
+
+    .timeline-item {
+      .timeline-content {
+        padding-left: 24px;
+      }
+    }
+  }
+}

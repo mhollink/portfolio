@@ -1,8 +1,10 @@
 import type { FunctionComponent } from 'react';
+import { About } from '~components/sections/about/About.tsx';
+import { Contact } from '~components/sections/contact/Contact.tsx';
+import { Experiences } from '~components/sections/experiences/Experiences.tsx';
+import { Projects } from '~components/sections/projects/Projects.tsx';
 import { Navbar } from './components/navbar/Navbar.tsx';
-import { Projects } from './components/sections/featured-projects/Projects.tsx';
 import { Hero } from './components/sections/hero/Hero.tsx';
-import { Skills } from './components/sections/skills/Skills.tsx';
 
 export const App: FunctionComponent = () => (
 	<>
@@ -10,7 +12,9 @@ export const App: FunctionComponent = () => (
 		<main>
 			<Hero />
 			<Projects />
-			<Skills />
+			<Experiences />
+			<About />
+			<Contact />
 		</main>
 	</>
 );

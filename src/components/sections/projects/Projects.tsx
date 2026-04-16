@@ -5,11 +5,14 @@ import { Typography } from '~design-system/components/typography/Typography.tsx'
 import { ProjectCard } from './ProjectCard.tsx';
 
 export const Projects: FunctionComponent = () => {
-	const { t } = useTranslation('featured-projects');
+	const { t } = useTranslation('projects');
 	return (
 		<section id="projects" className="featured-projects">
 			<div className="featured-projects__body">
-				<Typography variant="h2" style={{ marginBottom: '32px' }}>
+				<Typography
+					variant="h2"
+					style={{ marginBottom: '32px', textAlign: 'center' }}
+				>
 					{t('heading')}
 				</Typography>
 				<div className="featured-projects__card-container">
@@ -54,15 +57,15 @@ export const Projects: FunctionComponent = () => {
 					>
 						<Typography>{t('plugins.description')}</Typography>
 					</ProjectCard>
-                    <ProjectCard
-                        imageUrl={'/images/projects/ppp.png'}
-                        title={t('poolparty.title')}
-                        websiteLink={"/downloads/PoolPartyPanic_WindowsBeta.zip"}
-                        websiteLinkText={"Download"}
-                        labels={['C#', "Unity3d"]}
-                    >
-                        <Typography>{t('poolparty.description')}</Typography>
-                    </ProjectCard>
+					<ProjectCard
+						imageUrl={'/images/projects/ppp.png'}
+						title={t('poolparty.title')}
+						websiteLink={'/downloads/PoolPartyPanic_WindowsBeta.zip'}
+						websiteLinkText={'Download'}
+						labels={['C#', 'Unity3d']}
+					>
+						<Typography>{t('poolparty.description')}</Typography>
+					</ProjectCard>
 				</div>
 			</div>
 		</section>

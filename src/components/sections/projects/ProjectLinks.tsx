@@ -21,7 +21,9 @@ export const ProjectLinks: FunctionComponent<ProjectLinksProps> = ({
 	websiteLink,
 	iconLinks,
 }) => {
-	const { t } = useTranslation('featured-projects', {keyPrefix: "project-card"});
+	const { t } = useTranslation('projects', {
+		keyPrefix: 'project-card',
+	});
 	return (
 		<Flex direction="row" justify="space-between" align="center">
 			{Boolean(websiteLink) && (

@@ -1,6 +1,11 @@
 import type { ReactNode } from 'react';
-import type { Appearance, Variant } from './styles.ts';
-import { buttonBase, variantMap } from './styles.ts';
+import {
+	type Appearance,
+	buttonBase,
+	getButtonStyles,
+	type Variant,
+	variantMap,
+} from './styles.ts';
 
 type ButtonLinkProps = {
 	children: ReactNode;
@@ -15,7 +20,7 @@ export const ButtonLink = ({
 	appearance = 'contained',
 	href,
 }: ButtonLinkProps) => {
-	const variantStyles = variantMap[variant];
+	const variantStyles = getButtonStyles(variantMap[variant], appearance);
 	const styles = {
 		textDecoration: 'none',
 		borderRadius: buttonBase.borderRadius,
@@ -23,17 +28,7 @@ export const ButtonLink = ({
 		fontWeight: buttonBase.fontWeight,
 		border: '1px solid',
 
-		...(appearance === 'contained'
-			? {
-					backgroundColor: variantStyles.backgroundColor,
-					color: variantStyles.color,
-					borderColor: variantStyles.borderColor,
-				}
-			: {
-					backgroundColor: 'transparent',
-					color: variantStyles.backgroundColor,
-					borderColor: variantStyles.borderColor,
-				}),
+		...variantStyles,
 	};
 
 	return (

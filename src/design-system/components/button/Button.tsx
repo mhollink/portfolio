@@ -1,6 +1,11 @@
 import type { ReactNode } from 'react';
-import type { Appearance, Variant } from './styles.ts';
-import { buttonBase, variantMap } from './styles.ts';
+import {
+	type Appearance,
+	buttonBase,
+	getButtonStyles,
+	type Variant,
+	variantMap,
+} from './styles.ts';
 
 export type ButtonProps = {
 	children?: ReactNode;
@@ -21,7 +26,7 @@ export const Button = ({
 	iconOnly = false,
 	ariaLabel,
 }: ButtonProps) => {
-	const variantStyles = variantMap[variant];
+	const variantStyles = getButtonStyles(variantMap[variant], appearance);
 	const styles = {
 		borderRadius: iconOnly ? '50%' : buttonBase.borderRadius,
 		padding: iconOnly
@@ -38,17 +43,7 @@ export const Button = ({
 		opacity: disabled ? 0.6 : 1,
 		border: iconOnly ? 'none' : '1px solid',
 
-		...(appearance === 'contained'
-			? {
-					backgroundColor: variantStyles.backgroundColor,
-					color: variantStyles.color,
-					borderColor: variantStyles.borderColor,
-				}
-			: {
-					backgroundColor: 'transparent',
-					color: variantStyles.backgroundColor,
-					borderColor: variantStyles.borderColor,
-				}),
+		...variantStyles,
 	};
 
 	return (

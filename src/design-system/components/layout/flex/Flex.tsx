@@ -10,6 +10,7 @@ export type FlexProps = PropsWithChildren<{
 	gap?: keyof typeof theme.spacing;
 	align?: CSSProperties['alignItems'];
 	justify?: CSSProperties['justifyContent'];
+    margin?: CSSProperties['margin'];
 	wrap?: boolean;
 }>;
 
@@ -19,6 +20,7 @@ export const Flex: FunctionComponent<FlexProps> = ({
 	gap = 'md',
 	align = 'stretch',
 	justify = 'flex-start',
+    margin,
 	wrap = false,
 }) => (
 	<div
@@ -30,6 +32,7 @@ export const Flex: FunctionComponent<FlexProps> = ({
 				alignItems: align,
 				justifyContent: justify,
 				flexWrap: wrap ? 'wrap' : 'nowrap',
+                margin,
 			} as CSSProperties
 		}
 	>

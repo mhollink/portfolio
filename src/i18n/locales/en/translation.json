@@ -1,49 +1,58 @@
 {
-  "hero": {
-    "headline": "Building scalable products with Java & React",
-    "subtext": "Tech Lead focused on clean architecture, developer experience and modern frontend engineering.",
-    "buttons": {
-      "projects": "View Projects",
-      "resume": "Download CV"
-    },
-    "snippet": {
-      "engineer": "engineer",
-      "understandable": "Understandable",
-      "maintainability": "Maintainability",
-      "pragmatic": "Pragmatic",
-      "architecture": "Architecture"
-    }
-  },
-  "motd": {
-    "quote-1": "If it’s confusing, it’s wrong.",
-    "quote-2": "If you can’t explain it, you shouldn’t ship it.",
-    "quote-3": "The best solution is the one you don’t need to explain.",
-    "quote-4": "Life is like a Git repository, nothing is going to change if you don't commit and push forward.",
-    "quote-5": "Master the concepts. The syntax will follow.",
-    "quote-6": "If you know the why, the syntax is trivial.",
-    "quote-7": "Iteration beats hesitation.",
-    "quote-8": "What you ship shapes what comes next."
-  },
-  "featured-projects": {
-    "heading": "Projects",
-    "project-card": {
-      "visit-site": "Visit website"
-    },
-    "mlb": {
-      "title": "MESBG List Builder",
-      "description": "The List Builder is a progressive web application for the Middle-earth Strategy Battle Game that enables users to create, validate, and manage army lists, track live matches, and maintain their miniature collections."
-    },
-    "inventory": {
-      "title": "Mini Inventory",
-      "description": "The inventory is an PWA which helps hobbyists manage their miniature collection and “pile of shame” by tracking owned, unassembled, and painted models in a structured way. It enables users to turn their often overwhelming paint-backlog into a clear, actionable overview."
-    },
-    "plugins": {
-      "title": "Runelite Plugins",
-      "description": "I've created two RuneLite plugins that enhance both solo and cooperative gameplay within Old School RuneScape. Leveraged RuneLite’s plugin API to build lightweight, event-driven overlays to extend the game with additional features."
-    },
-    "poolparty": {
-      "title": "Pool Party Panic",
-      "description": "Near the end of my college education, I completed the Game Design and Development minor. During this minor, I developed a game using Unity3D and C#. In this game, the objective is to keep a cool head while ensuring that your guests do not catch fire."
-    }
-  }
+	"hero": {
+		"headline": "Building scalable products with Java & React",
+		"subtext": "Tech Lead focused on clean architecture, developer experience and modern frontend engineering.",
+		"buttons": {
+			"projects": "View Projects",
+			"resume": "Download CV"
+		},
+		"snippet": {
+			"engineer": "engineer",
+			"understandable": "Understandable",
+			"maintainability": "Maintainability",
+			"pragmatic": "Pragmatic",
+			"architecture": "Architecture"
+		},
+		"motd": {
+			"quote-1": "If it’s confusing, it’s wrong.",
+			"quote-2": "If you can’t explain it, you shouldn’t ship it.",
+			"quote-3": "The best solution is the one you don’t need to explain.",
+			"quote-4": "Life is like a Git repository, nothing is going to change if you don't commit and push forward.",
+			"quote-5": "Master the concepts. The syntax will follow.",
+			"quote-6": "If you know the why, the syntax is trivial.",
+			"quote-7": "Iteration beats hesitation.",
+			"quote-8": "What you ship shapes what comes next."
+		}
+	},
+	"projects": {
+		"heading": "My personal projects",
+		"project-card": {
+			"visit-site": "Visit website"
+		},
+		"mlb": {
+			"title": "MESBG List Builder",
+			"description": "The List Builder is a progressive web application for the Middle-earth Strategy Battle Game that enables users to create, validate, and manage army lists, track live matches, and maintain their miniature collections."
+		},
+		"inventory": {
+			"title": "Mini Inventory",
+			"description": "The inventory is an PWA which helps hobbyists manage their miniature collection and “pile of shame” by tracking owned, unassembled, and painted models in a structured way. It enables users to turn their often overwhelming paint-backlog into a clear, actionable overview."
+		},
+		"plugins": {
+			"title": "Runelite Plugins",
+			"description": "I've created two RuneLite plugins that enhance both solo and cooperative gameplay within Old School RuneScape. Leveraged RuneLite’s plugin API to build lightweight, event-driven overlays to extend the game with additional features."
+		},
+		"poolparty": {
+			"title": "Pool Party Panic",
+			"description": "Near the end of my college education, I completed the Game Design and Development minor. During this minor, I developed a game using Unity3D and C#. In this game, the objective is to keep a cool head while ensuring that your guests do not catch fire."
+		}
+	},
+	"experience": {
+		"heading": "My experiences"
+	},
+	"about": {
+		"heading": "More about me"
+	},
+	"contact": {
+		"heading": "Get in touch"
+	}
 }

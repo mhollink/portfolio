@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import {
 	type IconLink,
 	ProjectLinks,
-} from '~components/sections/featured-projects/ProjectLinks.tsx';
+} from '~components/sections/projects/ProjectLinks.tsx';
 import { Card } from '~design-system/components/card/Card.tsx';
 import { CardContent } from '~design-system/components/card/CardContent.tsx';
 import { CardImage } from '~design-system/components/card/CardImage.tsx';
@@ -15,7 +15,7 @@ export type ProjectCardProps = PropsWithChildren<{
 	title: string;
 	imageUrl?: string;
 	labels: string[];
-    websiteLinkText?: string;
+	websiteLinkText?: string;
 	websiteLink?: string;
 	iconLinks?: IconLink[];
 }>;
@@ -25,7 +25,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
 	title,
 	labels,
 	children,
-    websiteLinkText,
+	websiteLinkText,
 	websiteLink,
 	iconLinks,
 }) => (
@@ -51,7 +51,11 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
 				</Flex>
 				<div className="project-card__content">{children}</div>
 			</Flex>
-			<ProjectLinks linkText={websiteLinkText} websiteLink={websiteLink} iconLinks={iconLinks} />
+			<ProjectLinks
+				linkText={websiteLinkText}
+				websiteLink={websiteLink}
+				iconLinks={iconLinks}
+			/>
 		</CardContent>
 	</Card>
 );

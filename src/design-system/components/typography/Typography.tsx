@@ -10,7 +10,7 @@ export type Variant = 'body' | 'caption' | 'h1' | 'h2' | 'h3';
 
 const variantMap: Record<Variant, ElementType> = {
 	body: 'p',
-	caption: 'caption',
+	caption: 'span',
 	h1: 'h1',
 	h2: 'h2',
 	h3: 'h3',
@@ -18,6 +18,7 @@ const variantMap: Record<Variant, ElementType> = {
 
 type TypographyProps = PropsWithChildren<{
 	variant?: Variant;
+    color?: keyof typeof theme.colors;
 	style?: CSSProperties;
 	className?: string;
 }>;
@@ -25,14 +26,17 @@ type TypographyProps = PropsWithChildren<{
 export const Typography: FunctionComponent<TypographyProps> = ({
 	variant = 'body' as Variant,
 	children,
+    color,
 	style,
 	className,
 }) => {
 	const Component = variantMap[variant];
-	const styles: CSSProperties = {
-		...getVariantStyle(variant),
-		...style,
-	};
+    let variantStyle = getVariantStyle(variant);
+    const styles: CSSProperties = {
+        ...variantStyle,
+        ...style,
+        color: color ? theme.colors[color] : style?.color ?? variantStyle.color,
+    };
 	return (
 		<Component style={styles} className={className}>
 			{children}
@@ -71,7 +75,6 @@ function getVariantStyle(variant: Variant): CSSProperties {
 			return {
 				fontSize: theme.typography.sizes.xs,
 				color: theme.colors.caption,
-				display: 'block',
 			};
 		default:
 			return {

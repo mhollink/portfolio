@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { ButtonLink } from '~design-system/components/button/ButtonLink.tsx';
 import { Typography } from '~design-system/components/typography/Typography.tsx';
-import { MessageOfTheDay } from '../../motd/MessageOfTheDay.tsx';
+import { MessageOfTheDay } from './MessageOfTheDay.tsx';
 import { useSnippet } from './useSnippet.ts';
 
 export function Hero() {
@@ -21,7 +21,7 @@ export function Hero() {
 						</Typography>
 
 						<div className="hero__actions">
-							<ButtonLink href="#projects" variant="primary">
+							<ButtonLink href="#projects" variant="accent">
 								{t('buttons.projects')}
 							</ButtonLink>
 							<ButtonLink href="/resume.pdf" appearance="outlined">
