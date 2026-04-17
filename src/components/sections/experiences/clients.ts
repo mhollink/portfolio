@@ -40,11 +40,6 @@ export const clients: Client[] = [
                 description: 'rvig.projects.rv',
                 technologies: ['Java 21', 'Spring Boot', 'JPMS'],
             },
-            {
-                title: 'RNI Bericht',
-                description: 'rvig.projects.rv',
-                technologies: ['Java 21', 'Spring Boot', 'JPMS'],
-            },
         ],
     },
     {

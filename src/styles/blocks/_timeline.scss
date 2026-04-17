@@ -39,12 +39,17 @@
 
     &__content {
       padding-left: 32px;
+      white-space: pre-line;
     }
 
     &__projects {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       margin-top: 16px;
+
+      & > *:only-child {
+        grid-column: 1 / -1; /* span both columns */
+      }
 
       .client-project {
         padding: 8px 16px 8px;
@@ -61,12 +66,16 @@
   }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     padding-left: 16px;
 
-    .timeline-item {
-      .timeline-content {
+    .timeline__item {
+      &__content {
         padding-left: 24px;
+      }
+
+      &__projects {
+        grid-template-columns: 1fr;
       }
     }
   }
