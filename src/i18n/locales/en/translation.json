@@ -1,58 +1,92 @@
 {
-	"hero": {
-		"headline": "Building scalable products with Java & React",
-		"subtext": "Tech Lead focused on clean architecture, developer experience and modern frontend engineering.",
-		"buttons": {
-			"projects": "View Projects",
-			"resume": "Download CV"
-		},
-		"snippet": {
-			"engineer": "engineer",
-			"understandable": "Understandable",
-			"maintainability": "Maintainability",
-			"pragmatic": "Pragmatic",
-			"architecture": "Architecture"
-		},
-		"motd": {
-			"quote-1": "If it’s confusing, it’s wrong.",
-			"quote-2": "If you can’t explain it, you shouldn’t ship it.",
-			"quote-3": "The best solution is the one you don’t need to explain.",
-			"quote-4": "Life is like a Git repository, nothing is going to change if you don't commit and push forward.",
-			"quote-5": "Master the concepts. The syntax will follow.",
-			"quote-6": "If you know the why, the syntax is trivial.",
-			"quote-7": "Iteration beats hesitation.",
-			"quote-8": "What you ship shapes what comes next."
-		}
-	},
-	"projects": {
-		"heading": "My personal projects",
-		"project-card": {
-			"visit-site": "Visit website"
-		},
-		"mlb": {
-			"title": "MESBG List Builder",
-			"description": "The List Builder is a progressive web application for the Middle-earth Strategy Battle Game that enables users to create, validate, and manage army lists, track live matches, and maintain their miniature collections."
-		},
-		"inventory": {
-			"title": "Mini Inventory",
-			"description": "The inventory is an PWA which helps hobbyists manage their miniature collection and “pile of shame” by tracking owned, unassembled, and painted models in a structured way. It enables users to turn their often overwhelming paint-backlog into a clear, actionable overview."
-		},
-		"plugins": {
-			"title": "Runelite Plugins",
-			"description": "I've created two RuneLite plugins that enhance both solo and cooperative gameplay within Old School RuneScape. Leveraged RuneLite’s plugin API to build lightweight, event-driven overlays to extend the game with additional features."
-		},
-		"poolparty": {
-			"title": "Pool Party Panic",
-			"description": "Near the end of my college education, I completed the Game Design and Development minor. During this minor, I developed a game using Unity3D and C#. In this game, the objective is to keep a cool head while ensuring that your guests do not catch fire."
-		}
-	},
-	"experience": {
-		"heading": "My experiences"
-	},
-	"about": {
-		"heading": "More about me"
-	},
-	"contact": {
-		"heading": "Get in touch"
-	}
+  "hero": {
+    "headline": "Building scalable products with Java & React",
+    "subtext": "Tech Lead focused on clean architecture, developer experience and modern frontend engineering.",
+    "buttons": {
+      "projects": "View Projects",
+      "resume": "Download CV"
+    },
+    "snippet": {
+      "engineer": "engineer",
+      "understandable": "Understandable",
+      "maintainability": "Maintainability",
+      "pragmatic": "Pragmatic",
+      "architecture": "Architecture"
+    },
+    "motd": {
+      "quote-1": "If it’s confusing, it’s wrong.",
+      "quote-2": "If you can’t explain it, you shouldn’t ship it.",
+      "quote-3": "The best solution is the one you don’t need to explain.",
+      "quote-4": "Life is like a Git repository, nothing is going to change if you don't commit and push forward.",
+      "quote-5": "Master the concepts. The syntax will follow.",
+      "quote-6": "If you know the why, the syntax is trivial.",
+      "quote-7": "Iteration beats hesitation.",
+      "quote-8": "What you ship shapes what comes next."
+    }
+  },
+  "projects": {
+    "heading": "My personal projects",
+    "project-card": {
+      "visit-site": "Visit website"
+    },
+    "mlb": {
+      "title": "MESBG List Builder",
+      "description": "The List Builder is a progressive web application for the Middle-earth Strategy Battle Game that enables users to create, validate, and manage army lists, track live matches, and maintain their miniature collections."
+    },
+    "inventory": {
+      "title": "Mini Inventory",
+      "description": "The inventory is an PWA which helps hobbyists manage their miniature collection and “pile of shame” by tracking owned, unassembled, and painted models in a structured way. It enables users to turn their often overwhelming paint-backlog into a clear, actionable overview."
+    },
+    "plugins": {
+      "title": "Runelite Plugins",
+      "description": "I've created two RuneLite plugins that enhance both solo and cooperative gameplay within Old School RuneScape. Leveraged RuneLite’s plugin API to build lightweight, event-driven overlays to extend the game with additional features."
+    },
+    "poolparty": {
+      "title": "Pool Party Panic",
+      "description": "Near the end of my college education, I completed the Game Design and Development minor. During this minor, I developed a game using Unity3D and C#. In this game, the objective is to keep a cool head while ensuring that your guests do not catch fire."
+    }
+  },
+  "experience": {
+    "heading": "My experience",
+    "opening": "I am currently working as a consultant at Quintor. In this role, I am actively involved in developing innovative solutions for various clients and contribute to optimizing internal processes such as Scrum methodologies, work preparation, analyses, and stakeholder management.",
+    "masterclass": "At the start of my career in September 2017, I participated in the Java masterclass. The focus was on understanding underlying concepts and principles, rather than solely working with frameworks. During this intensive period, I gained experience with technologies such as AngularJS (frontend), RESTful web services, Spring, JPA, and CI/CD. I successfully completed the masterclass by obtaining my OCA and OCP certifications.",
+    "timeline-start": "After this period, I was assigned to various clients where I applied and further expanded my knowledge in practice.",
+    "clients": {
+      "rvig": {
+        "description": "RvIG is responsible for managing personal and identity data within the Netherlands. One of the applications developed by RvIG for centrally and reliably managing this data is the RNI (Non-Residents Registration). The RNI is part of the BRP and registers people who do not live in the Netherlands but have a relationship with the Dutch government, for example for work, study, or pension.",
+        "projects": {
+          "vooraanmelding": "The RNI Pre-registration is a web form that allows individuals to pre-register for their appointment at an RNI desk. The application consists of a React frontend and a Spring backend. The entered personal data is converted into a QR code that can be scanned at the desk, after which the data is displayed in the input fields of the desk employee. This development reduced the registration time by approximately 20 minutes per person.",
+          "portal": "A natural follow-up to the RNI Pre-registration is the RNI Portal. This web application helps individuals view and modify their personal data. The application again consists of a React frontend and a Spring backend. Users can log in to the portal using DigiD, after which they can update their address and contact details.",
+          "agw": "To ensure secure login to the RNI Portal, the team developed a gateway using Spring Cloud. This gateway is connected to an identity provider (IDP) that issues tokens containing user information. The gateway then links these tokens to a session cookie.\n\nThe gateway is designed to be highly environment-independent and has been made available by RvIG/DICTU as a generic building block for other applications.",
+          "rv": "When a ruling is made by the Council for the Judiciary regarding custody of a minor, an update must be made in the BRP. To achieve this, the municipality where the child is registered must update the child’s personal record. To facilitate this update, a message is prepared in the Messaging API. This message is picked up by the Routing Facility, which enriches it and forwards it to the municipality of registration."
+        }
+      },
+      "bol": {
+        "description": "Bol.com consists of many different departments, each contributing to the online webshop. During the nearly two years I worked at Bol.com, I was part of two of these departments. First, I worked in the Product Catalog department, where the focus is mainly on the data presented on the website. In the second period, I contributed to the Fintech department, where a migration of the payment platform was underway.",
+        "projects": {
+          "pcs": "Within the Product Catalog department, I worked in the team responsible for the Product Content Service. This is the low-latency solution used by Bol.com to serve product information extremely quickly to users. The team also worked on various services that performed data normalization, ensuring for example that a refrigerator’s weight is not displayed in grams in the webshop. As the last frontend developer had left the team shortly before I joined, my role focused on updating existing and setting up new management portals.",
+          "matchmaker": "Every day, Bol.com receives millions of payments that must be matched to the correct invoices and users. These payments are matched based on payment reference, IBAN, and/or other characteristics. When a payment cannot be matched, for example due to a typo in the payment reference, it must be processed manually by a FinOps employee. To make this process as efficient as possible, an application was developed that uses a GraphQL service to aggregate data from 11 underlying services into a single, unified view."
+        }
+      },
+      "svb": {
+        "description": "At SVB, work is being done on an administrative application for handling various benefit applications, grouped under the name AxW. Applications that cannot be processed automatically are routed to this application. Here, they are reviewed by one person and subsequently checked by another (four-eyes principle).",
+        "projects": {
+          "maf": "The application originally built to review and assess benefit checks, called AxW-Frontend, was difficult to improve. Therefore, the decision was made to modernize it. The Modernization AxW Frontend (MAF) project consisted of an AngularJS web application connected to a COBOL mainframe. After Google announced the end-of-life of AngularJS on December 31, 2021, this 'modern' application had to be migrated to Angular 10. A complex task, given that it involved over 80,000 lines of JavaScript code."
+        }
+      },
+      "kpn": {
+        "description": "KPN is developing a platform that allows customers to connect and manage their Internet of Things devices. The first customers of this platform include Van Happen Containers and Renewi. They manage their container administration using the KPN LoRa network, applying triangulation to determine container locations and rental durations. Later, the ANWB was also connected to track the location of stolen bicycles using GPS and Bluetooth LE.",
+        "projects": {
+          "solutions": "Within the KPN Solutions team, I was responsible for developing dashboards deployed in Cumulocity. These dashboards help customers manage their devices. In the container dashboard, Van Happen and Renewi can view container locations. It is also possible to configure geozones and determine how long a container has remained within a zone, which is highly useful for customer billing.",
+          "things": "Things Engine is the core of the KPN Things platform. The platform consists of various services focused on managing customers, IoT devices, and decoding messages originating from these devices. During this period, I mainly worked on services handling communication with IoT devices. The primary goal was to support a new device type designed to easily recover stolen e-bikes."
+        }
+      }
+    }
+  },
+  "about": {
+    "heading": "More about me"
+  },
+  "contact": {
+    "heading": "Get in touch"
+  }
 }
