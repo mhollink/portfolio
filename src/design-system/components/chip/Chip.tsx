@@ -52,7 +52,7 @@ export const Chip = ({
 				border: '1px solid',
 				minWidth: '5ch',
 				textAlign: 'center',
-                textWrap: 'nowrap',
+				textWrap: 'nowrap',
 				...sizeStyles,
 			}}
 		>

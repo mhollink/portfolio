@@ -1,0 +1,112 @@
+@use "../theme/colors";
+
+.about {
+
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-areas:
+    "text avatar"
+    "icons none";
+    white-space: pre-line;
+
+    &__text {
+      grid-area: text;
+    }
+
+    &__avatar {
+      grid-area: avatar;
+      place-self: center;
+      width: 220px;
+      height: 220px;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid colors.$dark-teal;
+      box-shadow: 0 0 16px 4px #073A4B66;
+
+      img {
+        transform: scale(1.25);
+      }
+    }
+
+    &__icons {
+      grid-area: icons;
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 2rem;
+      color: #6b728066;
+
+      svg:hover {
+        color: #EF486FFF;
+        cursor: pointer;
+      }
+
+      .tech-icon {
+        position: relative;
+        display: inline-flex;
+      }
+
+      /* Tooltip */
+      .tech-icon::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 140%;
+        left: 50%;
+        transform: translateX(-50%) translateY(4px);
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 18px;
+        white-space: nowrap;
+
+        background: #111827;
+        color: #e5e7eb;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.15s ease;
+      }
+
+      /* Arrow */
+      .tech-icon::before {
+        content: "";
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 5px;
+        border-style: solid;
+        border-color: #111827 transparent transparent transparent;
+
+        opacity: 0;
+        transition: opacity 0.15s ease;
+      }
+
+      /* Show on hover */
+      .tech-icon:hover::after,
+      .tech-icon:hover::before {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about__content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "avatar"
+      "text"
+      "icons";
+  }
+}

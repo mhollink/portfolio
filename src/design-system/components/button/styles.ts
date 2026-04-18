@@ -22,11 +22,11 @@ export const variantMap: Record<Variant, CSSProperties> = {
 		color: '#ffffff',
 		borderColor: theme.colors.secondary,
 	},
-    accent: {
-        backgroundColor: theme.colors.accent,
-        color: '#333333',
-        borderColor: theme.colors.accent,
-    },
+	accent: {
+		backgroundColor: theme.colors.accent,
+		color: '#333333',
+		borderColor: theme.colors.accent,
+	},
 	default: {
 		backgroundColor: theme.colors.text,
 		color: theme.colors.background,
