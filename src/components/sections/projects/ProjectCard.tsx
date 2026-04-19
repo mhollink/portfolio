@@ -42,7 +42,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
 				>
 					{title}
 				</CardTitle>
-				<Flex gap="xs">
+				<Flex gap="xs" wrap={true}>
 					{labels.map((label) => (
 						<Fragment key={label}>
 							<Chip appearance="outlined" label={label} size="small" />

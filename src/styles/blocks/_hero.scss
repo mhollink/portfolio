@@ -20,9 +20,9 @@
     width: 800px;
     height: 800px;
     background: radial-gradient(
-                    circle,
-                    rgba(34, 211, 238, 0.2),
-                    transparent 50%
+            circle,
+            rgba(34, 211, 238, 0.2),
+            transparent 50%
     );
     filter: blur(80px);
     z-index: 0;
@@ -93,12 +93,22 @@
 
 /* Mobile */
 @media (max-width: 900px) {
-  .hero__container {
-    grid-template-columns: 1fr;
-    text-align: center;
+  .hero {
+    &__container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    &__actions {
+      justify-content: center;
+    }
+
+    &__visual {
+      .code-card {
+        padding: 0.5rem 1rem;
+        font-size: 0.5rem;
+      }
+    }
   }
 
-  .hero__actions {
-    justify-content: center;
-  }
 }
