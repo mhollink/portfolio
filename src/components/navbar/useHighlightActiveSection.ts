@@ -6,7 +6,7 @@ export const useHighlightActiveSection = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrollPosition = window.scrollY + 120;
+			const scrollPosition = window.scrollY + 200;
 
 			for (const section of sections) {
 				const el = document.getElementById(section.id);
