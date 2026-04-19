@@ -38,7 +38,7 @@ export const Projects: FunctionComponent = () => {
 						iconLinks={[
 							{
 								icon: <FaGithub />,
-								to: 'https://github.com/avcordaro/mesbg-list-builder-v2024',
+								to: 'https://github.com/mhollink/miniature-inventory',
 							},
 						]}
 					>
