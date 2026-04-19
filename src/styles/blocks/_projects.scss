@@ -26,6 +26,9 @@
 
 /* 2-column layout with featured card */
 @media (max-width: 1200px) {
+  .featured-projects {
+    padding: 32px;
+  }
   .featured-projects__card-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -33,6 +36,9 @@
 
 /* single column layout */
 @media (max-width: 900px) {
+  .featured-projects {
+    padding: 16px;
+  }
   .featured-projects__card-container {
     grid-template-columns: 1fr;
   }
