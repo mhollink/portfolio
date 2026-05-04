@@ -19,7 +19,7 @@ export const Contact: FunctionComponent = () => {
 
                     <div style={{width: "fit-content", margin: "0 auto"}}>
 
-                        <Button variant="primary" appearance="outlined">
+                        <Button variant="primary" appearance="outlined" onClick={() => window.open("https://www.linkedin.com/in/mhollink/", "_blank")}>
                         <span style={{display: "flex", gap: "8px", alignItems: "center"}}>
                             <FaLinkedin fontSize="1.25rem"/>
                             <span style={{fontWeight: "bold", fontSize: "0.8rem"}}>Verbind met mij op LinkedIn</span>
@@ -38,7 +38,7 @@ export const Contact: FunctionComponent = () => {
 
                         <IconButton
                             appearance="outlined"
-                            onClick={() => window.open("https://github.com/mhollink", "_blank")}
+                            onClick={() => window.open("https://www.linkedin.com/in/mhollink/", "_blank")}
                         >
                             <FaLinkedinIn/>
                         </IconButton>
