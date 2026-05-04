@@ -1,93 +1,94 @@
 {
-	"hero": {
-		"headline": "Bouwt schaalbare producten met Java & React",
-		"subtext": "Tech Lead met focus op clean architecture, developer experience en moderne frontendontwikkeling",
-		"buttons": {
-			"projects": "Bekijk Projecten",
-			"resume": "Download CV"
-		},
-		"snippet": {
-			"engineer": "ontwikkelaar",
-			"understandable": "Begrijpbaar",
-			"maintainability": "Onderhoudbaar",
-			"pragmatic": "Pragmatisch",
-			"architecture": "Architectuur"
-		},
-		"motd": {
-			"quote-1": "Als het verwarrend is, klopt het niet.",
-			"quote-2": "Als je het niet kunt uitleggen, moet je het niet releasen.",
-			"quote-3": "De beste oplossing is degene die je niet hoeft uit te leggen.",
-			"quote-4": "Het leven is als een Git repository: er verandert niets als je niet commit en vooruit pusht.",
-			"quote-5": "Beheers de concepten. De syntax volgt vanzelf.",
-			"quote-6": "Als je het waarom kent, is de syntax triviaal.",
-			"quote-7": "Iteratie verslaat aarzeling.",
-			"quote-8": "Wat je heb gebouwd bepaalt wat hierna komt."
-		}
-	},
-	"projects": {
-		"heading": "Mijn persoonlijke projecten",
-		"project-card": {
-			"visit-site": "Bezoek website"
-		},
-		"mlb": {
-			"title": "MESBG List Builder",
-			"description": "De List Builder is een progressive web application voor de Middle-earth Strategy Battle Game waarmee gebruikers legerlijsten kunnen maken, valideren en beheren, live games kunnen volgen en hun miniaturenverzameling kunnen bijhouden."
-		},
-		"inventory": {
-			"title": "Mini Inventory",
-			"description": "De inventory is een PWA die hobbyisten helpt hun miniaturenverzameling en ‘pile of shame’ te beheren door op een gestructureerde manier bij te houden welke modellen ze bezitten, nog in elkaar moeten zetten of nog moeten schilderden. Het biedt gebruikers een duidelijk overzicht van hun vaak overweldigende verf-achterstand."
-		},
-		"plugins": {
-			"title": "RuneLite Plugins",
-			"description": "Ik heb twee RuneLite-plugins ontwikkeld die zowel solo- als coöperatieve gameplay binnen Old School RuneScape uitbreiden. Ze maken gebruik van de RuneLite plugin API om lichte, event-driven overlays te bouwen die de game uitbreiden met extra functionaliteit."
-		},
-		"poolparty": {
-			"title": "Pool Party Panic",
-			"description": "Aan het einde van mijn HBO opleiding heb ik de minor Game Design en Development gevolgd. Hierbij heb ik een spel gebouwd met behulp van Unity3D en C#. In dit spel is het de bedoeling dat je hoofd koel houdt terwijl je er voor zorgt dat je gast niet verbranden."
-		}
-	},
-	"experience": {
-		"heading": "Mijn ervaringen",
-		"opening": "Op dit moment werk ik als consultant bij Quintor. In deze rol ben ik actief betrokken bij het ontwikkelen van innovatieve oplossingen voor diverse klanten en lever ik een bijdrage aan het optimaliseren van interne processen, zoals Scrum-werkwijzen, werkvoorbereiding, analyses en stakeholdermanagement.",
-		"masterclass": "Bij mijn start in september 2017 heb ik deelgenomen aan de Java masterclass. De focus lag hierbij op het begrijpen van onderliggende concepten en principes, in plaats van uitsluitend het werken met frameworks. Tijdens deze intensieve periode heb ik ervaring opgedaan met technologieën zoals AngularJS (frontend), RESTful webservices, Spring, JPA en CI/CD. De masterclass heb ik succesvol afgerond met het behalen van mijn OCA- en OCP-certificeringen.",
-		"timeline-start": "Na deze periode ben ik ingezet bij verschillende klanten, waar ik mijn kennis in de praktijk heb toegepast en verder uitgebreid.",
-		"clients": {
-			"rvig": {
-				"description": "RvIG is verantwoordelijk voor beheren van persoons- en identiteitsgegevens binnen Nederland. Een van de applicaties die RvIG heeft ontwikkeld voor het centraal en betrouwbaar beheren van deze gegevens is  de RNI (Registratie Niet Ingezetenen). De RNI is een onderdeel van de BRP en registreert mensen die niet in Nederland wonen, maar wel een relatie hebben met de Nederlandse overheid, bijvoorbeeld voor werk, studie of pension.",
-				"projects": {
-					"vooraanmelding": "De RNI-Vooraanmelding is een webformulier waarmee personen zich kunnen voorinschrijven voor hun afspraak bij het RNI-loket. De applicatie bestaat uit een React frontend en een Spring backend. De ingevoerde persoonsgegevens worden omgezet tot een QR-code die aan het loket gescand kan worden waarna de invoer wordt gepresenteerd in de invoervelden van de loketmedewerker. De ontwikkeling heeft er voor gezorgd dat de registratie duur met ongeveer 20 minuten per persoon is verkort.",
-					"portal": "Een natuurlijk vervolg van de RNI-Vooraanmelding is het RNI-Portal. Het portal is een webapplicatie die personen helpt om hun persoonsgegevens in te zien en te wijzigen. De applicatie bestaat wederom uit een React frontend en een Spring backend. Gebruikers kunnen op het portal inloggen met DigiD waarna ze hun adres en contactgegevens kunnen wijzigen.",
-					"agw": "Om er voor te zorgen dat de gebruiker veilig kan inloggen op het RNI-Portal heeft het team met behulp van Spring Cloud een gateway ontwikkeld. Deze gateway is gekoppeld met een IDP die tokens uitgeeft waarin gebruikersgegevens staan. De gateway koppelt de tokens vervolgens aan een een sessie cookie.\n\n De gateway is dermate omgevings-onafhankelijk opgezet dat deze door RvIG/DICTU als generiek bouwblok voor andere applicaties beschikbaar is gesteld.",
-					"rv": "Wanneer er bij de Raad van de Rechtspraak een uitspraak gedaan wordt over het gezag over een minderjarig kind, moet er een aanpassing gedaan worden in de BRP. Om dit te bewerkstelligen moet de gemeente waar het kind is ingeschreven een wijziging doen op de persoonslijst van het kind. Om de wijziging bij de gemeente door te laten voeren wordt er een bericht in de Berichten-API klaargezet. Dit bericht wordt door de Routeeringsvoorziening opgepakt die het verreikt en doorstuurt naar de gemeente van inschrijving."
-				}
-			},
-			"bol": {
-				"description": "Bol.com bestaat uit veel verschillende afdelingen die elk een eigen steentje bijdragen aan de online webwinkel. In de bijna 2 jaar die ik bij Bol.com mee heb mogen draaien heb ik op 2 van deze afdelingen gewerkt. Allereerst op de Product Catalog afdeling waar de werkzaamheden zich voornamelijk richten op de data die gepresenteerd wordt op de website. In de 2de periode heb meegewerkt op de Fintech afdeling waar een migratie van de betaalstraat gaande was.",
-				"projects": {
-					"pcs": "Op de Product Catalog afdeling heb ik mee geraaid in het team verantwoordelijk voor de Product Content Service. Dit is 'de' low-latency oplossing de Bol.com gebruikt om product informatie razend snel te serveren aan alle gebruikers. Het team werkte daarnaast ook aan verschillende services die data normalisatie uitvoerde zodat bijvoorbeeld het gewicht van een koelkast niet in grammen in de webwinkel getoond wordt. Gezien de laatste frontender uit het team valk voor mijn komst het team verlaten had was mijn rol: Updaten van bestaande & inrichten van nieuwe de nieuwe beheer portalen.",
-					"matchmaker": "Elke dag krijgt Bol.com miljoenen betalingen binnen die gekoppeld moeten worden aan de juiste facturen en gebruikers. De betalingen die binnen komen wordt op basis van betalingskenmerk, IBAN en/of andere kenmerken gekoppeld. Wanneer een betaling niet gematcht kan worden, bijvoorbeeld doordat de gebruiker een typfout heeft gemaakt in het betalingskenmerk, dan moet deze handmatig door een FinOps medewerker verwerkt worden. Om alle werkzaamheden voor de FinOps medewerker zo makkelijk mogelijk te maken is er een applicatie ingericht die via een GraphQL service de data uit de 11 onderliggende services tot 1 geheel inzichtelijk maakt."
-				}
-			},
-			"svb": {
-				"description": "Bij de SVB wordt er gewerkt aan een administratie applicatie voor de aanvragen van verschillende uitkeringen welke gegroepeerd worden onder de naam AxW. De aanvragen die niet door de automatisering heen komen, en dus uitvallen, komen in de applicatie terecht. Hier worden ze beoordeeld door 1 persoon en vervolgens gecontroleerd door een ander (4 ogen principe).",
-				"projects": {
-					"maf": "De applicatie die ooit gebouwd is om de controles op de uitkeringen uit te voeren en te beoordelen met de naam AxW-Frontend was lastig te verbeteren. Er is dus de keuze gemaakt deze te verbeteren en te moderniseren. Het project Modernisering Axw Frontend (MAF) bestond uit een AngularJS webapplicatie aangesloten op een COBOL mainframe. Nadat Google op 31 december 2021 de end-of-life van AngularJS aankondigde moest deze 'moderne' applicatie naar Angular10 gemigreerd worden. Een complexe klus gezien het om ruim 80duizend regels javascript code ging."
-				}
-			},
-			"kpn": {
-				"description": "KPN ontwikkeld een platform waarop klanten hun Internet of Things apparaten kunnen aansluiten en beheren. Eerste klanten van dit platform zijn Van Happpen Containers en Renewi. Zij beheren hun containers administratie met behulp van het KPN LoRa netwerk om via triangulatie te bepalen waar de containers zich bevinden en hoelang ze zijn uit gehuurd. Later is ook de AWNB aangesloten om de locatie van gestolen fietsen te traceren met GPS en Bluetooth-LE.",
-				"projects": {
-					"solutions": "Binnen het KPN Solutions team was ik verantwoordelijk voor het ontwikkelen van de dashboards die in Cumulocity landen. Deze dashboards zijn bedoeld om klanten te helpen bij het beheren van hun apparaten. Binnen het container dashboard kunnen Van Happen en Renewi inzien waar containers zich bevinden. Daarnaast is het mogelijk om Geozones te configureren en hiermee te bepalen hoelang een container in een zone heeft gestaan. Super handig voor de facturering richting klanten.",
-					"things": "Things Engine is de core van het KPN Things platform. Het platform bestaat uit verschillende services die zich richten op het beheren van klanten, iot-apparaten en het decoderen van de berichten afkomstig van deze apparaten. In deze periode heb ik mij voornamelijk gericht op de services die zich bezighouden met het berichtverkeer naar de iot-apparaten toe. Het belangrijkste doel hierbij was de ondersteuning van het nieuwe apparaat type bedoeld om gestolen e-bikes makkelijk terug tevinden."
-				}
-			}
-		}
-	},
-	"about": {
-		"heading": "Meer over mij",
-		"text": "Ik werk als consultant bij Quintor, waar ik de afgelopen jaren software heb gebouwd binnen diverse klanttrajecten. Dit heeft mij de kans gegeven om in verschillende domeinen en omgevingen te werken, terwijl ik een consistente focus behoud op kwaliteit en duurzaamheid in de oplossingen die ik bouw.\n\nMijn werk richt zich op het ontwerpen van systemen die betrouwbaar, onderhoudbaar en helder in hun intentie zijn. Ik hecht veel waarde aan doordachte architectuur, goed gedefinieerde interfaces en het beheersen van complexiteit, zowel in de codebase als in het ontwikkelproces.\n\nAls tech lead richt ik mij op het creëren van helderheid binnen teams. Dit betekent het begeleiden van architecturale keuzes, het verbeteren van ontwikkelprocessen en het helpen groeien van anderen, met als doel om softwareontwikkeling als geheel effectiever te maken."
-	},
-	"contact": {
-		"heading": "Kom in contact"
-	}
+  "hero": {
+    "headline": "Bouwt schaalbare producten met Java & React",
+    "subtext": "Tech Lead met focus op clean architecture, developer experience en moderne frontendontwikkeling",
+    "buttons": {
+      "projects": "Bekijk Projecten",
+      "resume": "Download CV"
+    },
+    "snippet": {
+      "engineer": "ontwikkelaar",
+      "understandable": "Begrijpbaar",
+      "maintainability": "Onderhoudbaar",
+      "pragmatic": "Pragmatisch",
+      "architecture": "Architectuur"
+    },
+    "motd": {
+      "quote-1": "Als het verwarrend is, klopt het niet.",
+      "quote-2": "Als je het niet kunt uitleggen, moet je het niet releasen.",
+      "quote-3": "De beste oplossing is degene die je niet hoeft uit te leggen.",
+      "quote-4": "Het leven is als een Git repository: er verandert niets als je niet commit en vooruit pusht.",
+      "quote-5": "Beheers de concepten. De syntax volgt vanzelf.",
+      "quote-6": "Als je het waarom kent, is de syntax triviaal.",
+      "quote-7": "Iteratie verslaat aarzeling.",
+      "quote-8": "Wat je heb gebouwd bepaalt wat hierna komt."
+    }
+  },
+  "projects": {
+    "heading": "Mijn persoonlijke projecten",
+    "project-card": {
+      "visit-site": "Bezoek website"
+    },
+    "mlb": {
+      "title": "MESBG List Builder",
+      "description": "De List Builder is een progressive web application voor de Middle-earth Strategy Battle Game waarmee gebruikers legerlijsten kunnen maken, valideren en beheren, live games kunnen volgen en hun miniaturenverzameling kunnen bijhouden."
+    },
+    "inventory": {
+      "title": "Mini Inventory",
+      "description": "De inventory is een PWA die hobbyisten helpt hun miniaturenverzameling en ‘pile of shame’ te beheren door op een gestructureerde manier bij te houden welke modellen ze bezitten, nog in elkaar moeten zetten of nog moeten schilderden. Het biedt gebruikers een duidelijk overzicht van hun vaak overweldigende verf-achterstand."
+    },
+    "plugins": {
+      "title": "RuneLite Plugins",
+      "description": "Ik heb twee RuneLite-plugins ontwikkeld die zowel solo- als coöperatieve gameplay binnen Old School RuneScape uitbreiden. Ze maken gebruik van de RuneLite plugin API om lichte, event-driven overlays te bouwen die de game uitbreiden met extra functionaliteit."
+    },
+    "poolparty": {
+      "title": "Pool Party Panic",
+      "description": "Aan het einde van mijn HBO opleiding heb ik de minor Game Design en Development gevolgd. Hierbij heb ik een spel gebouwd met behulp van Unity3D en C#. In dit spel is het de bedoeling dat je hoofd koel houdt terwijl je er voor zorgt dat je gast niet verbranden."
+    }
+  },
+  "experience": {
+    "heading": "Mijn ervaringen",
+    "opening": "Op dit moment werk ik als consultant bij Quintor. In deze rol ben ik actief betrokken bij het ontwikkelen van innovatieve oplossingen voor diverse klanten en lever ik een bijdrage aan het optimaliseren van interne processen, zoals Scrum-werkwijzen, werkvoorbereiding, analyses en stakeholdermanagement.",
+    "masterclass": "Bij mijn start in september 2017 heb ik deelgenomen aan de Java masterclass. De focus lag hierbij op het begrijpen van onderliggende concepten en principes, in plaats van uitsluitend het werken met frameworks. Tijdens deze intensieve periode heb ik ervaring opgedaan met technologieën zoals AngularJS (frontend), RESTful webservices, Spring, JPA en CI/CD. De masterclass heb ik succesvol afgerond met het behalen van mijn OCA- en OCP-certificeringen.",
+    "timeline-start": "Na deze periode ben ik ingezet bij verschillende klanten, waar ik mijn kennis in de praktijk heb toegepast en verder uitgebreid.",
+    "clients": {
+      "rvig": {
+        "description": "RvIG is verantwoordelijk voor beheren van persoons- en identiteitsgegevens binnen Nederland. Een van de applicaties die RvIG heeft ontwikkeld voor het centraal en betrouwbaar beheren van deze gegevens is  de RNI (Registratie Niet Ingezetenen). De RNI is een onderdeel van de BRP en registreert mensen die niet in Nederland wonen, maar wel een relatie hebben met de Nederlandse overheid, bijvoorbeeld voor werk, studie of pension.",
+        "projects": {
+          "vooraanmelding": "De RNI-Vooraanmelding is een webformulier waarmee personen zich kunnen voorinschrijven voor hun afspraak bij het RNI-loket. De applicatie bestaat uit een React frontend en een Spring backend. De ingevoerde persoonsgegevens worden omgezet tot een QR-code die aan het loket gescand kan worden waarna de invoer wordt gepresenteerd in de invoervelden van de loketmedewerker. De ontwikkeling heeft er voor gezorgd dat de registratie duur met ongeveer 20 minuten per persoon is verkort.",
+          "portal": "Een natuurlijk vervolg van de RNI-Vooraanmelding is het RNI-Portal. Het portal is een webapplicatie die personen helpt om hun persoonsgegevens in te zien en te wijzigen. De applicatie bestaat wederom uit een React frontend en een Spring backend. Gebruikers kunnen op het portal inloggen met DigiD waarna ze hun adres en contactgegevens kunnen wijzigen.",
+          "agw": "Om er voor te zorgen dat de gebruiker veilig kan inloggen op het RNI-Portal heeft het team met behulp van Spring Cloud een gateway ontwikkeld. Deze gateway is gekoppeld met een IDP die tokens uitgeeft waarin gebruikersgegevens staan. De gateway koppelt de tokens vervolgens aan een een sessie cookie.\n\n De gateway is dermate omgevings-onafhankelijk opgezet dat deze door RvIG/DICTU als generiek bouwblok voor andere applicaties beschikbaar is gesteld.",
+          "rv": "Wanneer er bij de Raad van de Rechtspraak een uitspraak gedaan wordt over het gezag over een minderjarig kind, moet er een aanpassing gedaan worden in de BRP. Om dit te bewerkstelligen moet de gemeente waar het kind is ingeschreven een wijziging doen op de persoonslijst van het kind. Om de wijziging bij de gemeente door te laten voeren wordt er een bericht in de Berichten-API klaargezet. Dit bericht wordt door de Routeeringsvoorziening opgepakt die het verreikt en doorstuurt naar de gemeente van inschrijving."
+        }
+      },
+      "bol": {
+        "description": "Bol.com bestaat uit veel verschillende afdelingen die elk een eigen steentje bijdragen aan de online webwinkel. In de bijna 2 jaar die ik bij Bol.com mee heb mogen draaien heb ik op 2 van deze afdelingen gewerkt. Allereerst op de Product Catalog afdeling waar de werkzaamheden zich voornamelijk richten op de data die gepresenteerd wordt op de website. In de 2de periode heb meegewerkt op de Fintech afdeling waar een migratie van de betaalstraat gaande was.",
+        "projects": {
+          "pcs": "Op de Product Catalog afdeling heb ik mee geraaid in het team verantwoordelijk voor de Product Content Service. Dit is 'de' low-latency oplossing de Bol.com gebruikt om product informatie razend snel te serveren aan alle gebruikers. Het team werkte daarnaast ook aan verschillende services die data normalisatie uitvoerde zodat bijvoorbeeld het gewicht van een koelkast niet in grammen in de webwinkel getoond wordt. Gezien de laatste frontender uit het team valk voor mijn komst het team verlaten had was mijn rol: Updaten van bestaande & inrichten van nieuwe de nieuwe beheer portalen.",
+          "matchmaker": "Elke dag krijgt Bol.com miljoenen betalingen binnen die gekoppeld moeten worden aan de juiste facturen en gebruikers. De betalingen die binnen komen wordt op basis van betalingskenmerk, IBAN en/of andere kenmerken gekoppeld. Wanneer een betaling niet gematcht kan worden, bijvoorbeeld doordat de gebruiker een typfout heeft gemaakt in het betalingskenmerk, dan moet deze handmatig door een FinOps medewerker verwerkt worden. Om alle werkzaamheden voor de FinOps medewerker zo makkelijk mogelijk te maken is er een applicatie ingericht die via een GraphQL service de data uit de 11 onderliggende services tot 1 geheel inzichtelijk maakt."
+        }
+      },
+      "svb": {
+        "description": "Bij de SVB wordt er gewerkt aan een administratie applicatie voor de aanvragen van verschillende uitkeringen welke gegroepeerd worden onder de naam AxW. De aanvragen die niet door de automatisering heen komen, en dus uitvallen, komen in de applicatie terecht. Hier worden ze beoordeeld door 1 persoon en vervolgens gecontroleerd door een ander (4 ogen principe).",
+        "projects": {
+          "maf": "De applicatie die ooit gebouwd is om de controles op de uitkeringen uit te voeren en te beoordelen met de naam AxW-Frontend was lastig te verbeteren. Er is dus de keuze gemaakt deze te verbeteren en te moderniseren. Het project Modernisering Axw Frontend (MAF) bestond uit een AngularJS webapplicatie aangesloten op een COBOL mainframe. Nadat Google op 31 december 2021 de end-of-life van AngularJS aankondigde moest deze 'moderne' applicatie naar Angular10 gemigreerd worden. Een complexe klus gezien het om ruim 80duizend regels javascript code ging."
+        }
+      },
+      "kpn": {
+        "description": "KPN ontwikkeld een platform waarop klanten hun Internet of Things apparaten kunnen aansluiten en beheren. Eerste klanten van dit platform zijn Van Happpen Containers en Renewi. Zij beheren hun containers administratie met behulp van het KPN LoRa netwerk om via triangulatie te bepalen waar de containers zich bevinden en hoelang ze zijn uit gehuurd. Later is ook de AWNB aangesloten om de locatie van gestolen fietsen te traceren met GPS en Bluetooth-LE.",
+        "projects": {
+          "solutions": "Binnen het KPN Solutions team was ik verantwoordelijk voor het ontwikkelen van de dashboards die in Cumulocity landen. Deze dashboards zijn bedoeld om klanten te helpen bij het beheren van hun apparaten. Binnen het container dashboard kunnen Van Happen en Renewi inzien waar containers zich bevinden. Daarnaast is het mogelijk om Geozones te configureren en hiermee te bepalen hoelang een container in een zone heeft gestaan. Super handig voor de facturering richting klanten.",
+          "things": "Things Engine is de core van het KPN Things platform. Het platform bestaat uit verschillende services die zich richten op het beheren van klanten, iot-apparaten en het decoderen van de berichten afkomstig van deze apparaten. In deze periode heb ik mij voornamelijk gericht op de services die zich bezighouden met het berichtverkeer naar de iot-apparaten toe. Het belangrijkste doel hierbij was de ondersteuning van het nieuwe apparaat type bedoeld om gestolen e-bikes makkelijk terug tevinden."
+        }
+      }
+    }
+  },
+  "about": {
+    "heading": "Meer over mij",
+    "text": "Ik werk als consultant bij Quintor, waar ik de afgelopen jaren software heb gebouwd binnen diverse klanttrajecten. Dit heeft mij de kans gegeven om in verschillende domeinen en omgevingen te werken, terwijl ik een consistente focus behoud op kwaliteit en duurzaamheid in de oplossingen die ik bouw.\n\nMijn werk richt zich op het ontwerpen van systemen die betrouwbaar, onderhoudbaar en helder in hun intentie zijn. Ik hecht veel waarde aan doordachte architectuur, goed gedefinieerde interfaces en het beheersen van complexiteit, zowel in de codebase als in het ontwikkelproces.\n\nAls tech lead richt ik mij op het creëren van helderheid binnen teams. Dit betekent het begeleiden van architecturale keuzes, het verbeteren van ontwikkelprocessen en het helpen groeien van anderen, met als doel om softwareontwikkeling als geheel effectiever te maken."
+  },
+  "contact": {
+    "heading": "Interesse om samen te werken?",
+    "description": "Ik werk momenteel als consultant bij Quintor, waar ik organisaties help met het ontwerpen en realiseren van duurzame softwareoplossingen."
+  }
 }

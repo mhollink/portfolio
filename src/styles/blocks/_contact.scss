@@ -1,0 +1,46 @@
+@use "../theme/colors";
+
+.contact {
+  padding: 4rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+
+
+  &__wrapper {
+    position: relative;
+    padding: 2px;
+    border-radius: 34px;
+    overflow: hidden;
+    opacity: 1;
+    transform: none;
+
+    &::before {
+      content: "";
+      background: conic-gradient(
+              colors.$emerald,
+              colors.$bubblegum-pink,
+              colors.$ocean-blue,
+              colors.$bubblegum-pink,
+              colors.$golden-pollen,
+              colors.$emerald);
+      z-index: 1;
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      top: -50%;
+      left: -50%;
+    }
+  }
+
+  &__inner {
+    z-index: 2;
+    background-color: black;
+    border-radius: 32px;
+    padding: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

@@ -1,93 +1,94 @@
 {
-	"hero": {
-		"headline": "Building scalable products with Java & React",
-		"subtext": "Tech Lead focused on clean architecture, developer experience and modern frontend engineering.",
-		"buttons": {
-			"projects": "View Projects",
-			"resume": "Download CV"
-		},
-		"snippet": {
-			"engineer": "engineer",
-			"understandable": "Understandable",
-			"maintainability": "Maintainability",
-			"pragmatic": "Pragmatic",
-			"architecture": "Architecture"
-		},
-		"motd": {
-			"quote-1": "If it’s confusing, it’s wrong.",
-			"quote-2": "If you can’t explain it, you shouldn’t ship it.",
-			"quote-3": "The best solution is the one you don’t need to explain.",
-			"quote-4": "Life is like a Git repository, nothing is going to change if you don't commit and push forward.",
-			"quote-5": "Master the concepts. The syntax will follow.",
-			"quote-6": "If you know the why, the syntax is trivial.",
-			"quote-7": "Iteration beats hesitation.",
-			"quote-8": "What you ship shapes what comes next."
-		}
-	},
-	"projects": {
-		"heading": "My personal projects",
-		"project-card": {
-			"visit-site": "Visit website"
-		},
-		"mlb": {
-			"title": "MESBG List Builder",
-			"description": "The List Builder is a progressive web application for the Middle-earth Strategy Battle Game that enables users to create, validate, and manage army lists, track live matches, and maintain their miniature collections."
-		},
-		"inventory": {
-			"title": "Mini Inventory",
-			"description": "The inventory is an PWA which helps hobbyists manage their miniature collection and “pile of shame” by tracking owned, unassembled, and painted models in a structured way. It enables users to turn their often overwhelming paint-backlog into a clear, actionable overview."
-		},
-		"plugins": {
-			"title": "Runelite Plugins",
-			"description": "I've created two RuneLite plugins that enhance both solo and cooperative gameplay within Old School RuneScape. Leveraged RuneLite’s plugin API to build lightweight, event-driven overlays to extend the game with additional features."
-		},
-		"poolparty": {
-			"title": "Pool Party Panic",
-			"description": "Near the end of my college education, I completed the Game Design and Development minor. During this minor, I developed a game using Unity3D and C#. In this game, the objective is to keep a cool head while ensuring that your guests do not catch fire."
-		}
-	},
-	"experience": {
-		"heading": "Experience",
-		"opening": "I currently work as a consultant at Quintor, developing innovative solutions for a variety of clients. I also contribute to improving internal processes, including Scrum practices, work preparation, analysis, and stakeholder management.",
-		"masterclass": "I started my career in September 2017 with a Java masterclass focused on core concepts rather than frameworks. During this intensive program, I gained experience with AngularJS (frontend), RESTful web services, Spring, JPA, and CI/CD. I completed the program with OCA and OCP certifications.",
-		"timeline-start": "Afterwards, I worked on assignments for various clients, applying and expanding my skills in practice.",
-		"clients": {
-			"rvig": {
-				"description": "RvIG manages personal and identity data in the Netherlands. One of its key applications is the RNI (Non-Residents Registration), part of the BRP, which registers people who do not live in the Netherlands but interact with the Dutch government (e.g. for work, study, or pensions).",
-				"projects": {
-					"vooraanmelding": "The RNI Pre-registration is a web form that allows users to pre-register for appointments. Built with a React frontend and Spring backend, it converts user input into a QR code for quick processing at the desk. This reduced registration time by ~20 minutes per person.",
-					"portal": "The RNI Portal enables users to view and update their personal data. Built with React and Spring, it integrates with DigiD for secure authentication and allows users to manage address and contact details.",
-					"agw": "To secure access to the RNI Portal, we built a gateway using Spring Cloud. It integrates with an identity provider (IDP) issuing tokens with user data, which are mapped to session cookies. The solution is environment-agnostic and reusable as a generic building block within RvIG/DICTU.",
-					"rv": "Court rulings on child custody require updates in the BRP. To support this, messages are prepared via the Messaging API and processed by a Routing Facility, which enriches and forwards them to the responsible municipality."
-				}
-			},
-			"bol": {
-				"description": "Bol.com operates through multiple departments supporting its e-commerce platform. Over nearly two years, I worked in both the Product Catalog and Fintech domains.",
-				"projects": {
-					"pcs": "At Product Catalog, I worked on the Product Content Service, a low-latency system serving product data at scale. The team also built normalization services to ensure consistent data presentation. I focused on maintaining and rebuilding internal management portals after the departure of the team’s frontend developer.",
-					"matchmaker": "Bol.com processes millions of payments daily that must be matched to users and invoices. When automatic matching fails (e.g. due to input errors), manual handling is required. We built a GraphQL-based application aggregating data from 11 services into a single interface to streamline FinOps workflows."
-				}
-			},
-			"svb": {
-				"description": "At SVB, I worked on AxW, an administrative system for handling benefit applications. Cases that fail automated processing are reviewed manually using a four-eyes principle.",
-				"projects": {
-					"maf": "The legacy AxW-Frontend was difficult to maintain, leading to a modernization effort. The MAF project involved migrating an AngularJS application (connected to a COBOL mainframe) to Angular 10 after AngularJS reached end-of-life. This included refactoring over 80,000 lines of JavaScript."
-				}
-			},
-			"kpn": {
-				"description": "KPN develops an IoT platform for connecting and managing devices. Early customers included Van Happen Containers and Renewi, using LoRa for container tracking. Later, ANWB integrated the platform to track stolen bikes via GPS and Bluetooth LE.",
-				"projects": {
-					"solutions": "Within KPN Solutions, I built dashboards in Cumulocity to help customers manage devices. These dashboards provide insights into container locations and support geozone configuration to track usage duration, enabling accurate billing.",
-					"things": "The Things Engine is the core of the KPN IoT platform. I worked mainly on services handling communication with devices, focusing on supporting a new device type for recovering stolen e-bikes."
-				}
-			}
-		}
-	},
-	"about": {
-		"heading": "More about me",
-		"text": "I work as a consultant at Quintor, where I have spent the past years building software across a range of client engagements. This has given me the opportunity to work in different domains and environments, while maintaining a consistent focus on quality and sustainability in the solutions I build.\n\nMy work centers around designing systems that are reliable, maintainable and clear in their intent. I value thoughtful architecture, well-defined interfaces and keeping complexity under control, both in the codebase and in the development process.\n\nAs a tech lead, I focus on creating clarity within teams. This means guiding architectural decisions, improving development workflows and helping others grow, with the goal of making engineering more effective as a whole."
-	},
-	"contact": {
-		"heading": "Get in touch"
-	}
+  "hero": {
+    "headline": "Building scalable products with Java & React",
+    "subtext": "Tech Lead focused on clean architecture, developer experience and modern frontend engineering.",
+    "buttons": {
+      "projects": "View Projects",
+      "resume": "Download CV"
+    },
+    "snippet": {
+      "engineer": "engineer",
+      "understandable": "Understandable",
+      "maintainability": "Maintainability",
+      "pragmatic": "Pragmatic",
+      "architecture": "Architecture"
+    },
+    "motd": {
+      "quote-1": "If it’s confusing, it’s wrong.",
+      "quote-2": "If you can’t explain it, you shouldn’t ship it.",
+      "quote-3": "The best solution is the one you don’t need to explain.",
+      "quote-4": "Life is like a Git repository, nothing is going to change if you don't commit and push forward.",
+      "quote-5": "Master the concepts. The syntax will follow.",
+      "quote-6": "If you know the why, the syntax is trivial.",
+      "quote-7": "Iteration beats hesitation.",
+      "quote-8": "What you ship shapes what comes next."
+    }
+  },
+  "projects": {
+    "heading": "My personal projects",
+    "project-card": {
+      "visit-site": "Visit website"
+    },
+    "mlb": {
+      "title": "MESBG List Builder",
+      "description": "The List Builder is a progressive web application for the Middle-earth Strategy Battle Game that enables users to create, validate, and manage army lists, track live matches, and maintain their miniature collections."
+    },
+    "inventory": {
+      "title": "Mini Inventory",
+      "description": "The inventory is an PWA which helps hobbyists manage their miniature collection and “pile of shame” by tracking owned, unassembled, and painted models in a structured way. It enables users to turn their often overwhelming paint-backlog into a clear, actionable overview."
+    },
+    "plugins": {
+      "title": "Runelite Plugins",
+      "description": "I've created two RuneLite plugins that enhance both solo and cooperative gameplay within Old School RuneScape. Leveraged RuneLite’s plugin API to build lightweight, event-driven overlays to extend the game with additional features."
+    },
+    "poolparty": {
+      "title": "Pool Party Panic",
+      "description": "Near the end of my college education, I completed the Game Design and Development minor. During this minor, I developed a game using Unity3D and C#. In this game, the objective is to keep a cool head while ensuring that your guests do not catch fire."
+    }
+  },
+  "experience": {
+    "heading": "Experience",
+    "opening": "I currently work as a consultant at Quintor, developing innovative solutions for a variety of clients. I also contribute to improving internal processes, including Scrum practices, work preparation, analysis, and stakeholder management.",
+    "masterclass": "I started my career in September 2017 with a Java masterclass focused on core concepts rather than frameworks. During this intensive program, I gained experience with AngularJS (frontend), RESTful web services, Spring, JPA, and CI/CD. I completed the program with OCA and OCP certifications.",
+    "timeline-start": "Afterwards, I worked on assignments for various clients, applying and expanding my skills in practice.",
+    "clients": {
+      "rvig": {
+        "description": "RvIG manages personal and identity data in the Netherlands. One of its key applications is the RNI (Non-Residents Registration), part of the BRP, which registers people who do not live in the Netherlands but interact with the Dutch government (e.g. for work, study, or pensions).",
+        "projects": {
+          "vooraanmelding": "The RNI Pre-registration is a web form that allows users to pre-register for appointments. Built with a React frontend and Spring backend, it converts user input into a QR code for quick processing at the desk. This reduced registration time by ~20 minutes per person.",
+          "portal": "The RNI Portal enables users to view and update their personal data. Built with React and Spring, it integrates with DigiD for secure authentication and allows users to manage address and contact details.",
+          "agw": "To secure access to the RNI Portal, we built a gateway using Spring Cloud. It integrates with an identity provider (IDP) issuing tokens with user data, which are mapped to session cookies. The solution is environment-agnostic and reusable as a generic building block within RvIG/DICTU.",
+          "rv": "Court rulings on child custody require updates in the BRP. To support this, messages are prepared via the Messaging API and processed by a Routing Facility, which enriches and forwards them to the responsible municipality."
+        }
+      },
+      "bol": {
+        "description": "Bol.com operates through multiple departments supporting its e-commerce platform. Over nearly two years, I worked in both the Product Catalog and Fintech domains.",
+        "projects": {
+          "pcs": "At Product Catalog, I worked on the Product Content Service, a low-latency system serving product data at scale. The team also built normalization services to ensure consistent data presentation. I focused on maintaining and rebuilding internal management portals after the departure of the team’s frontend developer.",
+          "matchmaker": "Bol.com processes millions of payments daily that must be matched to users and invoices. When automatic matching fails (e.g. due to input errors), manual handling is required. We built a GraphQL-based application aggregating data from 11 services into a single interface to streamline FinOps workflows."
+        }
+      },
+      "svb": {
+        "description": "At SVB, I worked on AxW, an administrative system for handling benefit applications. Cases that fail automated processing are reviewed manually using a four-eyes principle.",
+        "projects": {
+          "maf": "The legacy AxW-Frontend was difficult to maintain, leading to a modernization effort. The MAF project involved migrating an AngularJS application (connected to a COBOL mainframe) to Angular 10 after AngularJS reached end-of-life. This included refactoring over 80,000 lines of JavaScript."
+        }
+      },
+      "kpn": {
+        "description": "KPN develops an IoT platform for connecting and managing devices. Early customers included Van Happen Containers and Renewi, using LoRa for container tracking. Later, ANWB integrated the platform to track stolen bikes via GPS and Bluetooth LE.",
+        "projects": {
+          "solutions": "Within KPN Solutions, I built dashboards in Cumulocity to help customers manage devices. These dashboards provide insights into container locations and support geozone configuration to track usage duration, enabling accurate billing.",
+          "things": "The Things Engine is the core of the KPN IoT platform. I worked mainly on services handling communication with devices, focusing on supporting a new device type for recovering stolen e-bikes."
+        }
+      }
+    }
+  },
+  "about": {
+    "heading": "More about me",
+    "text": "I work as a consultant at Quintor, where I have spent the past years building software across a range of client engagements. This has given me the opportunity to work in different domains and environments, while maintaining a consistent focus on quality and sustainability in the solutions I build.\n\nMy work centers around designing systems that are reliable, maintainable and clear in their intent. I value thoughtful architecture, well-defined interfaces and keeping complexity under control, both in the codebase and in the development process.\n\nAs a tech lead, I focus on creating clarity within teams. This means guiding architectural decisions, improving development workflows and helping others grow, with the goal of making engineering more effective as a whole."
+  },
+  "contact": {
+    "heading": "Interested in working together?",
+    "description": "I work as a consultant at Quintor, where I assist clients with designing and building software solutions that are reliable, maintainable and clear in their intent."
+  }
 }
