@@ -19,7 +19,7 @@ export const Projects: FunctionComponent = () => {
 					<ProjectCard
 						imageUrl={'/images/projects/mesbg.png'}
 						title={t('mlb.title')}
-						labels={['React-ts', 'FireAuth', 'SlimFramework']}
+						labels={['React', 'Firebase Auth', 'SlimFramework']}
 						websiteLink="https://mesbg-list-builder.com"
 						iconLinks={[
 							{
@@ -33,7 +33,7 @@ export const Projects: FunctionComponent = () => {
 					<ProjectCard
 						imageUrl={'/images/projects/shame.png'}
 						title={t('inventory.title')}
-						labels={['React-ts', 'FireAuth', 'SlimFramework']}
+						labels={['React', 'Firebase Auth', 'SlimFramework']}
 						websiteLink="https://miniature-inventory.nl"
 						iconLinks={[
 							{

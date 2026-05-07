@@ -16,29 +16,62 @@ export type Client = {
 export const clients: Client[] = [
 	{
 		company: 'DICTU & RvIG',
-		role: 'Tech lead',
+		role: 'Fullstack Senior Engineer / Tech Lead, Scrum Master',
 		start: new Date(2023, 8),
 		description: 'rvig.description',
 		projects: [
 			{
 				title: 'RNI Vooraanmelding',
 				description: 'rvig.projects.vooraanmelding',
-				technologies: ['React', 'Java 21', 'Spring Boot', 'Kubernetes', 'Helm'],
+				technologies: [
+					'React',
+					'Java 21',
+					'Spring Boot',
+					'Jakarta EE',
+					'Kubernetes',
+					'Helm',
+				],
 			},
 			{
 				title: 'RNI Portal',
 				description: 'rvig.projects.portal',
-				technologies: ['React', 'Java 21', 'Spring Boot', 'Kubernetes'],
+				technologies: [
+					'React',
+					'Java 21',
+					'Spring Boot',
+					'Jakarta EE',
+					'Spring-WS',
+					'Kubernetes',
+					'Helm',
+					'Ansible',
+				],
 			},
 			{
 				title: 'Authorization Gateway',
 				description: 'rvig.projects.agw',
-				technologies: ['Java 21', 'Spring Cloud Gateway'],
+				technologies: [
+					'Java 21',
+					'Spring Cloud Gateway',
+					'OAuth2',
+					'JPA',
+					'Redis',
+				],
 			},
 			{
 				title: 'Routeringsvoorziening',
 				description: 'rvig.projects.rv',
-				technologies: ['Java 21', 'Spring Boot', 'JPMS'],
+				technologies: ['Java 21', 'Spring Boot', 'JPA', 'JPMS'],
+			},
+			{
+				title: 'Email verificatie',
+				description: 'rvig.projects.email',
+				technologies: [
+					'Java 21',
+					'Spring Boot',
+					'OAuth2',
+					'Nimbus-JOSE + JWT',
+					'JWE',
+				],
 			},
 		],
 	},
